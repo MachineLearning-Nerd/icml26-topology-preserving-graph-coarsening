@@ -1,0 +1,2 @@
+command: src/claim1_discrete_operations.py --out outputs/claim1_discrete_operations
+all three source-faithful discrete fixtures preserve reported clique-complex Betti numbers; destructive control changes beta0.

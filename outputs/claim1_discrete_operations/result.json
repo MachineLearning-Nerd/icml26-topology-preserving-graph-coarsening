@@ -1,0 +1,48 @@
+{
+  "method": "clean-room source-faithful discrete Algorithm 1/2/3 fixtures",
+  "source_upstream_commit": "9f73ec9500b084e27be7a37f5007de5abe60d2c3",
+  "rows": [
+    {
+      "operation": "GStrongCollapse",
+      "fixture": "pendant_into_dominator",
+      "beta0_before": 1,
+      "beta1_before": 0,
+      "beta0_after": 1,
+      "beta1_after": 0,
+      "detail": "{\"dominator\": 1, \"removed_node\": 0}"
+    },
+    {
+      "operation": "GEdgeCollapse",
+      "fixture": "triangle_edge",
+      "beta0_before": 1,
+      "beta1_before": 0,
+      "beta0_after": 1,
+      "beta1_after": 0,
+      "detail": "{\"edge_dominator\": 2, \"removed_edge\": [0, 1]}"
+    },
+    {
+      "operation": "NeighborhoodConing",
+      "fixture": "two_star_coning",
+      "beta0_before": 1,
+      "beta1_before": 0,
+      "beta0_after": 1,
+      "beta1_after": 0,
+      "detail": "{\"dominator\": 1, \"inserted_edges\": [[1, 2]], \"removed_node\": 0}"
+    }
+  ],
+  "negative_control": {
+    "operation": "destructive_non_dominance_removal",
+    "before": {
+      "beta0": 1,
+      "beta1": 0
+    },
+    "after": {
+      "beta0": 2,
+      "beta1": 0
+    },
+    "expected_failure": true
+  },
+  "python": "3.14.5 (main, May 10 2026, 18:26:20) [GCC 16.1.1 20260430]",
+  "platform": "Linux-7.0.9-arch2-1-x86_64-with-glibc2.43",
+  "seed": "deterministic"
+}

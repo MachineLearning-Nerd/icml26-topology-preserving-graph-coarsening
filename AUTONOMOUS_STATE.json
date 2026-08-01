@@ -1,27 +1,34 @@
 {
   "schema_version": 1,
   "openreview_id": "WtINGEMjTB",
-  "phase": "claim_1_source_direct_protocol",
-  "next_action": "execute_claim_1_discrete_operation_fixture",
+  "phase": "claim_1_attempt_1_discrete_operations_toy",
+  "next_action": "independent_review_claim_1_toy_then_claim_2_source_faithful_protocol",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
     "live_contract_saved",
     "source_and_upstream_pinned",
-    "claim_1_protocol_scaffold"
+    "claim_1_protocol_scaffold",
+    "claim_1_attempt_1_discrete_operations_toy"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
-    "1": 0,
+    "1": 1,
     "2": 0,
     "3": 0,
     "4": 0,
     "5": 0,
     "6": 0
   },
-  "last_checkpoint": "2026-08-01T14:30:38Z",
-  "last_known_git_commit": "76715f7b27eb4621f86d4e43b63acb90413f1a2f",
+  "last_checkpoint": "2026-08-01T16:45:00Z",
+  "last_known_git_commit": "PENDING_COMMIT",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
-  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-WtINGEMjTB-topology-preserving-graph-coarsening"
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-WtINGEMjTB-topology-preserving-graph-coarsening",
+  "claim_1_outcome": {
+    "verdict": "toy",
+    "scope": "deterministic local fixtures for the three source-pinned discrete operations with clique-complex Betti controls; not DBLP/GNN or universal proof",
+    "evidence": "outputs/claim1_discrete_operations/result.json",
+    "negative_control": "non-dominance middle-node deletion changes beta0 from 1 to 2"
+  }
 }

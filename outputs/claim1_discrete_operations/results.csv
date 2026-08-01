@@ -1,0 +1,4 @@
+operation,fixture,beta0_before,beta1_before,beta0_after,beta1_after,detail
+GStrongCollapse,pendant_into_dominator,1,0,1,0,"{""dominator"": 1, ""removed_node"": 0}"
+GEdgeCollapse,triangle_edge,1,0,1,0,"{""edge_dominator"": 2, ""removed_edge"": [0, 1]}"
+NeighborhoodConing,two_star_coning,1,0,1,0,"{""dominator"": 1, ""inserted_edges"": [[1, 2]], ""removed_node"": 0}"
