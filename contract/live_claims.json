@@ -1,0 +1,26 @@
+[
+  {
+    "text": "STPGC extends graph strong collapse and graph edge collapse from algebraic topology into scalable graph coarsening algorithms, including GStrongCollapse, GEdgeCollapse, and NeighborhoodConing (Section 3.1, Section 3.2, Section 3.3).",
+    "status": "unverified"
+  },
+  {
+    "text": "Lemma 2.5 proves that graph strong collapse and graph edge collapse operations preserve homotopy equivalence of the underlying graph (Section 2.2, Lemma 2.5).",
+    "status": "unverified"
+  },
+  {
+    "text": "GStrongCollapse and NeighborhoodConing provably do not increase shortest-path distances, while GEdgeCollapse increases shortest paths by at most 1 per removed edge (Section 3.4, Lemma 3.3, Lemma 3.4).",
+    "status": "unverified"
+  },
+  {
+    "text": "On DBLP at coarsening ratio c=0.1, STPGC runs in 6.37s versus 100.42s for GEC, a 15.7x speedup, while achieving higher downstream node-classification accuracy (82.4-84.6% vs 78.9-82.9%) (Table 1, Table 2, Section 4).",
+    "status": "unverified"
+  },
+  {
+    "text": "On the cit-Patent dataset, STPGC achieves up to 37x runtime acceleration over GEC while demonstrating near-linear scalability across LiveJournal, YouTube, cit-Patent, and Flixster (Figures 7-8, Section 4).",
+    "status": "unverified"
+  },
+  {
+    "text": "STPGC strictly preserves 1-Betti numbers throughout the ExactCoarsening phase, unlike competing methods that show immediate topological degradation (Figure 4, Section 4).",
+    "status": "unverified"
+  }
+]

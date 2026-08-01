@@ -1,0 +1,23 @@
+{
+  "retrieved_at_utc": "2026-08-01T14:30:38Z",
+  "openreview_id": "WtINGEMjTB",
+  "submission_number": 9789,
+  "title": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+  "claim_count": 6,
+  "maximum_points": 12,
+  "claim_precedence": "claims_anchored.json replaces claims.json when a matching ORID exists; this ORID has no anchored override",
+  "source_urls": {
+    "challenge": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/README.md",
+    "index": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/index.json",
+    "claims": "https://icml-2026-agent-repro-challenge.static.hf.space/claims.json",
+    "anchored": "https://icml-2026-agent-repro-challenge.static.hf.space/claims_anchored.json"
+  },
+  "sha256": {
+    "README.md": "027f66e6da758c4a0d75fff6c9298e5322dde64d21a97d33e4367e42c3a421c5",
+    "index.json": "fdc3074ee5105da8b061146ecf78d927a4266a9841db16ba2b5c747b48727ee0",
+    "claims.json": "6f0984c875e7bc9507a9d3cf738621d22db16bc4c244ed7ceab86d60ecd14e01",
+    "claims_anchored.json": "7c0373fbbfb98b5acdc2c0ac122d9d81431bd6b42dda76fa36a91b49ec4b7825",
+    "metadata.json": "5637548e87c07b9b6300dfd5abbe3a537b07c69b29b169897e86bc4437e67475",
+    "live_claims.json": "422715467d6ee68b35d08000cc84e87b5128de35da9dbfb8a4c08796fa548427"
+  }
+}

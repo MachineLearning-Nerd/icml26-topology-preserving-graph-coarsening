@@ -1,0 +1,24 @@
+{
+  "i": 9789,
+  "pid": "63471",
+  "orid": "WtINGEMjTB",
+  "title": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+  "authors": [
+    "Xiang Wu",
+    "Rong-Hua Li",
+    "Xunkai Li",
+    "Kangfei Zhao",
+    "Hongchao Qin",
+    "Guoren Wang"
+  ],
+  "insts": [],
+  "area": "Deep Learning",
+  "sub": "Graph Neural Networks",
+  "type": "Poster",
+  "spot": false,
+  "or": "https://openreview.net/forum?id=WtINGEMjTB",
+  "vs": "https://icml.cc/virtual/2026/poster/63471",
+  "arxiv": "2601.22943",
+  "alphaxiv": "2601.22943",
+  "hf": ""
+}

@@ -1,0 +1,18 @@
+{
+  "retrieved_at_utc": "2026-08-01T14:30:38.564486+00:00",
+  "official_urls": {
+    "index.json": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/index.json",
+    "README.md": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/README.md",
+    "claims.json": "https://icml-2026-agent-repro-challenge.static.hf.space/claims.json",
+    "claims_anchored.json": "https://icml-2026-agent-repro-challenge.static.hf.space/claims_anchored.json",
+    "logbook_spaces.json": "https://huggingface.co/api/spaces?filter=icml2026-repro&expand[]=tags&expand[]=sha&sort=createdAt&direction=-1&limit=500"
+  },
+  "sha256": {
+    "index.json": "fdc3074ee5105da8b061146ecf78d927a4266a9841db16ba2b5c747b48727ee0",
+    "README.md": "027f66e6da758c4a0d75fff6c9298e5322dde64d21a97d33e4367e42c3a421c5",
+    "claims.json": "6f0984c875e7bc9507a9d3cf738621d22db16bc4c244ed7ceab86d60ecd14e01",
+    "claims_anchored.json": "7c0373fbbfb98b5acdc2c0ac122d9d81431bd6b42dda76fa36a91b49ec4b7825",
+    "logbook_spaces.json": "bb5d1943b615612b968692cefefaf0b10f7424b9960dd5a4b2a909d1d0434b43",
+    "eligible_candidates.json": "0b8ffecf4faa17ca2bcb4b977a918ffaa5d7a17d7823f45d6de0b7f970dc8c9e"
+  }
+}
