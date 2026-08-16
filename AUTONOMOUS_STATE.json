@@ -1,17 +1,26 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "paper": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+  "arxiv": "2601.22943v2",
   "openreview_id": "WtINGEMjTB",
-  "phase": "published_and_live_verified_claim_1_toy_only",
-  "next_action": "continue_claim_2_source_faithful_protocol",
-  "active_run_ids": [],
-  "completed_milestones": [
-    "live_duplicate_gate",
-    "live_contract_saved",
-    "source_and_upstream_pinned",
-    "claim_1_protocol_scaffold",
-    "claim_1_attempt_1_discrete_operations_toy"
+  "authors": [
+    "Xiang Wu",
+    "Rong-Hua Li",
+    "Xunkai Li",
+    "Kangfei Zhao",
+    "Hongchao Qin",
+    "Guoren Wang"
   ],
-  "failed_attempts": [],
+  "phase": "dossier_published_claim_1_toy_only",
+  "next_action": "continue_claim_2_source_faithful_protocol",
+  "claim_status": {
+    "1": "toy_finite_operation_fixtures",
+    "2": "unverified_not_started",
+    "3": "unverified_not_started",
+    "4": "unverified_not_started",
+    "5": "unverified_not_started",
+    "6": "unverified_not_started"
+  },
   "claim_attempt_counts": {
     "1": 1,
     "2": 0,
@@ -20,23 +29,30 @@
     "5": 0,
     "6": 0
   },
-  "last_checkpoint": "2026-08-12T22:00:40Z",
-  "last_known_git_commit": "9504d2a6984b6577dda6fcd334e420ead6dc8084",
-  "publication_allowed": false,
+  "completed_milestones": [
+    "live_duplicate_gate",
+    "live_contract_saved",
+    "source_and_upstream_pinned",
+    "claim_1_protocol_scaffold",
+    "claim_1_attempt_1_discrete_operations_toy",
+    "repository_dossier_published",
+    "fresh_clone_verifier_passed"
+  ],
+  "failed_attempts": [],
+  "dossier_publication_allowed": true,
+  "full_scientific_release_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "old_repository": "icml26-repro-WtINGEMjTB-topology-preserving-graph-coarsening",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening",
-  "claim_1_outcome": {
-    "verdict": "toy",
-    "scope": "deterministic local fixtures for the three source-pinned discrete operations with clique-complex Betti controls; not DBLP/GNN or universal proof",
-    "evidence": "outputs/claim1_discrete_operations/result.json",
-    "negative_control": "non-dominance middle-node deletion changes beta0 from 1 to 2"
-  },
-  "documentation": {
-    "readme": "complete",
-    "branch_audit": "complete",
-    "status": "complete",
-    "citation_and_thank_you": "complete",
-    "repository_rename": "complete"
+  "pre_dossier_main": "a60b5167e8da65d0b0b2063a99e22195ee3cbf7c",
+  "dossier_commit": "200c6360140cba52539ed889649a4a3508f85f11",
+  "dossier_commit_message": "docs(audit): publish topology coarsening dossier",
+  "recovery_bundle_sha256": "2b64d66fa11acad930dc4edae96927e324c8146f8d6085621b2ce8b3a776267c",
+  "evidence": {
+    "paper_pdf_sha256": "215d2b0491b2cab3225c351570e9986f9984cfa228b4ce4e5722d1084ac491cf",
+    "paper_source_sha256": "dcb4be3149eb266c308a502e1d41fe75677a320c09b21fa63572afdfeb5234f0",
+    "claim1_result_sha256": "ca8d365acd97552781c5f1165eb551a487cf26d9aedbde17dc17670ea63e0123",
+    "claim1_output_manifest_sha256": "2018c93f73ae79fe5b48a6aa2f113589f4b5e0f69d43064f7f9d0226a592d444"
   },
   "live_verification": {
     "repository_name": "icml26-topology-preserving-graph-coarsening",
@@ -44,6 +60,27 @@
     "branch_count": 1,
     "old_orx_branches_present": false,
     "reachable_commit_identity": "MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>",
-    "readme_blob": "57a58c6a46e694fbbae7ef79f2283b1ef5c002a5"
+    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=6 claim1=toy claims2-6=unverified",
+    "fresh_clone_path": "/tmp/icml-topology-final-verify.8CpYyq",
+    "github_description": "ICML 2026 scoped reproduction audit for Scalable Topology-Preserving Graph Coarsening",
+    "github_homepage": "https://arxiv.org/abs/2601.22943"
+  },
+  "documentation": {
+    "readme": "complete",
+    "status": "complete",
+    "branch_audit": "complete",
+    "claim_evidence": "complete",
+    "source_audit": "complete",
+    "environment": "complete",
+    "report": "complete",
+    "claims_json": "complete",
+    "citation_and_thank_you": "complete",
+    "evidence_manifest": "complete",
+    "final_verifier": "complete",
+    "repository_rename": "complete"
+  },
+  "attribution": {
+    "name": "MachineLearning-Nerd",
+    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com"
   }
 }
