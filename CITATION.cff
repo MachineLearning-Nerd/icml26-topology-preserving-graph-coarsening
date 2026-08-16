@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this audit, cite both this repository and the original paper."
+title: "Scalable Topology-Preserving Graph Coarsening: Independent Reproduction Audit"
+type: software
+version: "1.0.0"
+date-released: 2026-08-17
+authors:
+  - name: MachineLearning-Nerd
+    website: https://github.com/MachineLearning-Nerd
+repository-code: https://github.com/MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening
+url: https://github.com/MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening
+keywords:
+  - graph coarsening
+  - topology preservation
+  - graph neural networks
+  - reproducibility
+  - ICML 2026
+references:
+  - type: article
+    authors:
+      - family-names: Wu
+        given-names: Xiang
+      - family-names: Li
+        given-names: Rong-Hua
+      - family-names: Li
+        given-names: Xunkai
+      - family-names: Zhao
+        given-names: Kangfei
+      - family-names: Qin
+        given-names: Hongchao
+      - family-names: Wang
+        given-names: Guoren
+    title: "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms"
+    year: 2026
+    doi: 10.48550/arXiv.2601.22943
+    url: https://arxiv.org/abs/2601.22943v2

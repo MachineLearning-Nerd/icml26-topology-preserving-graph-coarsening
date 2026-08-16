@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "repository": "MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening",
+  "paper": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+  "branch_contract": {
+    "default": "main",
+    "total": 1,
+    "descriptive": 0,
+    "old_prefix_absent": "orx/"
+  },
+  "aggregates": {
+    "evidence/source/arxiv.pdf": "215d2b0491b2cab3225c351570e9986f9984cfa228b4ce4e5722d1084ac491cf",
+    "evidence/source/arxiv_source.tar.gz": "dcb4be3149eb266c308a502e1d41fe75677a320c09b21fa63572afdfeb5234f0",
+    "evidence/source/SHA256SUMS": "c8e2158ab51377c332da5522403cc7119e5a1ad10bdfff46e15f3c7afd0a6e87",
+    "evidence/upstream/UPSTREAM_PIN.txt": "9797ca1e6f2efb95fec33d046047e9d7709de7173ac00797a0cad513b88b5fc7",
+    "outputs/claim1_discrete_operations/SHA256SUMS": "2018c93f73ae79fe5b48a6aa2f113589f4b5e0f69d43064f7f9d0226a592d444",
+    "outputs/claim1_discrete_operations/result.json": "ca8d365acd97552781c5f1165eb551a487cf26d9aedbde17dc17670ea63e0123",
+    "outputs/claim1_discrete_operations/results.csv": "dbff0c2c0b56801c0ed5b014783832ef5e8f0ab86b96155d2054a594f0e37322",
+    "outputs/claim1_discrete_operations/run.log": "5f6ce9faa95d3722eee415d1fd43025bbf02466ea1900ffcef72b8a004e5eecc"
+  },
+  "files": [
+    {"path": "README.md", "sha256": "f6c0fc3cc533bb887029cd7a95605072974c86eadedf8555fe993c0ab83b4b13"},
+    {"path": "STATUS.md", "sha256": "6f94753354caeed8edd2e740040003a022a495f537deef3ea560abf8c87a123f"},
+    {"path": "branch-audit.md", "sha256": "77e283287b4aadcd5eab1667570218cab40e1c79876662c4fce604c23c7a676c"},
+    {"path": "BRANCH_AUDIT.md", "sha256": "2037dd44f451b9e3bf47f8c44b86b23fff8faa0151ba65d02f1cb3992b9d087b"},
+    {"path": "AUTHOR_THANK_YOU.md", "sha256": "fa210a77238b53382f3f56f7138b48e01f83b5b0599c026327d7c1fdbf206930"},
+    {"path": "CITATION.cff", "sha256": "a5d73dad62507410e54ff7113fb7b15b09897964b604b543489f0389181af513"},
+    {"path": "CLAIM_EVIDENCE.md", "sha256": "3465c9d5116cabac281b8fd044b3f6e80ee5ee1fec5f0a3169e2d36273a3a8da"},
+    {"path": "ENVIRONMENT.md", "sha256": "650ce9b7713e84924466956579bb788af261a04509fcf47049924894b9ea97b9"},
+    {"path": "REPORT.md", "sha256": "f2e14a6ede9df0303560eb154b125e876361aefc8367f708b801eaaa27069a3c"},
+    {"path": "SOURCE_AUDIT.md", "sha256": "254b0f7a5b46f011d0e61476762e3d778bac92a960fbf40134595e2c57df3dcc"},
+    {"path": "claims.json", "sha256": "cad54b2dacb3ba993e535a0ebfad8fcec70598921cf2168202df827f8dbba2ae"},
+    {"path": "verify_final.py", "sha256": "e2b86fc7acfd878d625a0301ea3da227588862223be70b486aabc583570c35ae"}
+  ]
+}

@@ -35,6 +35,33 @@ It reports `(Betti_0, Betti_1) = (1, 0)` before and after each of
 middle node of a three-node path without a dominance certificate changes
 `Betti_0` from 1 to 2, demonstrating that the control can fail.
 
+## Audit dossier
+
+The repository-level audit record is split into small, reviewable documents:
+
+- [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md) maps all six claims to their current
+  evidence producers, controls, and explicit unverified boundaries.
+- [SOURCE_AUDIT.md](SOURCE_AUDIT.md) records the paper, challenge contract,
+  source hashes, upstream pin, and former/current repository names.
+- [ENVIRONMENT.md](ENVIRONMENT.md) records the local command, artifact runtime,
+  resource policy, and no-large-workload boundary.
+- [REPORT.md](REPORT.md) gives the concise scoped result and limitations.
+- [BRANCH_AUDIT.md](BRANCH_AUDIT.md) records the main-only branch topology,
+  attribution contract, and final verifier.
+- [claims.json](claims.json) is the machine-readable status ledger.
+- [CITATION.cff](CITATION.cff) and [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md)
+  provide citation metadata and the thank-you note to the paper authors.
+- [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) hashes the dossier and
+  immutable source/toy evidence.
+
+The current result is intentionally conservative: Claim 1 is
+<code>TOY_FINITE_OPERATION_FIXTURES</code>; Claims 2–6 are
+<code>UNVERIFIED_NOT_STARTED</code>. Run the lightweight final check with:
+
+~~~bash
+PYTHONDONTWRITEBYTECODE=1 python3 verify_final.py
+~~~
+
 ## How the current claim evidence is produced
 
 | Claim | Evidence path | What is and is not established |

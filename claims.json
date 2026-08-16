@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "paper": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+  "source": "arXiv:2601.22943v2",
+  "openreview_id": "WtINGEMjTB",
+  "claims": [
+    {
+      "id": 1,
+      "status": "TOY_FINITE_OPERATION_FIXTURES",
+      "paper_target": "STPGC extends GStrongCollapse, GEdgeCollapse, and NeighborhoodConing",
+      "implementation": [
+        "src/claim1_discrete_operations.py"
+      ],
+      "checker": [
+        "tests/test_claim1_discrete_operations.py",
+        "outputs/claim1_discrete_operations/result.json"
+      ],
+      "controls": [
+        "destructive non-dominance removal changes beta0 from 1 to 2"
+      ],
+      "scope": "Three deterministic tiny graph fixtures; not a general proof or paper-scale experiment"
+    },
+    {
+      "id": 2,
+      "status": "UNVERIFIED_NOT_STARTED",
+      "paper_target": "Lemma 2.5 homotopy-equivalence preservation",
+      "implementation": [],
+      "checker": [],
+      "controls": [],
+      "scope": "No evidence produced"
+    },
+    {
+      "id": 3,
+      "status": "UNVERIFIED_NOT_STARTED",
+      "paper_target": "Shortest-path and receptive-field bounds",
+      "implementation": [],
+      "checker": [],
+      "controls": [],
+      "scope": "No evidence produced"
+    },
+    {
+      "id": 4,
+      "status": "UNVERIFIED_NOT_STARTED",
+      "paper_target": "DBLP runtime and node-classification results",
+      "implementation": [],
+      "checker": [],
+      "controls": [],
+      "scope": "No evidence produced"
+    },
+    {
+      "id": 5,
+      "status": "UNVERIFIED_NOT_STARTED",
+      "paper_target": "cit-Patent acceleration and multi-dataset scalability",
+      "implementation": [],
+      "checker": [],
+      "controls": [],
+      "scope": "No evidence produced"
+    },
+    {
+      "id": 6,
+      "status": "UNVERIFIED_NOT_STARTED",
+      "paper_target": "ExactCoarsening Betti_1 trajectory",
+      "implementation": [],
+      "checker": [],
+      "controls": [],
+      "scope": "No evidence produced"
+    }
+  ],
+  "boundary": "Only the finite local Claim 1 operation fixtures are evidenced; Claims 2–6 remain unverified."
+}
