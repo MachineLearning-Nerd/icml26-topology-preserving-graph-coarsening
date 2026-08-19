@@ -40,7 +40,7 @@
     {"path": "SOURCE_AUDIT.md", "sha256": "254b0f7a5b46f011d0e61476762e3d778bac92a960fbf40134595e2c57df3dcc"},
     {"path": "claims.json", "sha256": "4ecf2bdf7d1ed2ca146327dddb2cfceb3ea31c90100eff2e7452f473c5241051"},
     {"path": "reproduction_verdicts.json", "sha256": "c09328edf9940f7a8f1aa21a8a08a22740065363054053cb8a1078a4ba1fd12b"},
-    {"path": "AUTONOMOUS_STATE.json", "sha256": "ab2c35b95068d9742f42196f998999d0b33e904870873f4cc71e1c94d7dffb37"},
-    {"path": "verify_final.py", "sha256": "1d4d55d38d485e124b0854cbb54dfd51a9878a70a7a39426b7892b481c051ed8"}
+    {"path": "AUTONOMOUS_STATE.json", "sha256": "896f796ecc1b76cdc6a2d52a1cabd81bc883fde910aa5da4d45f8883a73489f9"},
+    {"path": "verify_final.py", "sha256": "d1eeee6284dc22738cc9a7a99e7472cc3c5e8e83692386b5629e250c6d91bc90"}
   ]
 }

@@ -50,8 +50,8 @@
   "old_repository": "icml26-repro-WtINGEMjTB-topology-preserving-graph-coarsening",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening",
   "pre_dossier_main": "a60b5167e8da65d0b0b2063a99e22195ee3cbf7c",
-  "dossier_commit": "4d33f27f4991fb84968b3ac1ff1199495e536955",
-  "dossier_commit_message": "docs(audit): publish topology coarsening dossier",
+  "dossier_commit": "42ef6e4dcab562c48eae3b4a72734b7b07a29562",
+  "dossier_commit_message": "Standardize topology coarsening audit state",
   "recovery_bundle_sha256": "2b64d66fa11acad930dc4edae96927e324c8146f8d6085621b2ce8b3a776267c",
   "evidence": {
     "paper_pdf_sha256": "215d2b0491b2cab3225c351570e9986f9984cfa228b4ce4e5722d1084ac491cf",
@@ -65,7 +65,7 @@
     "branch_count": 1,
     "old_orx_branches_present": false,
     "reachable_commit_identity": "MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>",
-    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=6 claim1=toy claims2-6=unverified",
+    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=8 claim1=toy claims2-6=unverified",
     "fresh_clone_path": "/tmp/icml-topology-final-verify.8CpYyq",
     "github_description": "ICML 2026 scoped reproduction audit for Scalable Topology-Preserving Graph Coarsening",
     "github_homepage": "https://arxiv.org/abs/2601.22943"
@@ -84,7 +84,7 @@
     "final_verifier": "complete",
     "repository_rename": "complete"
   },
-  "verified_reachable_commits": 7,
+  "verified_reachable_commits": 8,
   "dossier_files": [
     "README.md",
     "STATUS.md",
