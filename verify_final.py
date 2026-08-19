@@ -18,8 +18,11 @@ EXPECTED_ORIGIN = (
 EXPECTED_BRANCHES = {"main"}
 EXPECTED_IDENTITY = (
     "MachineLearning-Nerd",
-    "37579156+MachineLearning-Nerd@users.noreply.github.com",
+    "MachineLearning-Nerd@users.noreply.github.com",
 )
+EXPECTED_REPOSITORY = "MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening"
+EXPECTED_OVERALL_VERDICT = "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED"
+EXPECTED_PUBLICATION_BOUNDARY = "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION"
 ERRORS: list[str] = []
 
 
@@ -131,6 +134,8 @@ def main() -> int:
         "REPORT.md",
         "SOURCE_AUDIT.md",
         "claims.json",
+        "reproduction_verdicts.json",
+        "AUTONOMOUS_STATE.json",
         "EVIDENCE_MANIFEST.json",
         "verify_final.py",
         "contract/live_claims.json",
@@ -151,6 +156,22 @@ def main() -> int:
         "descriptive": 0,
         "old_prefix_absent": "orx/",
     }, "branch contract mismatch")
+    require(
+        manifest.get("repository") == EXPECTED_REPOSITORY,
+        "manifest repository mismatch",
+    )
+    require(
+        manifest.get("overall_verdict") == EXPECTED_OVERALL_VERDICT
+        and manifest.get("publication_allowed") is False
+        and manifest.get("publication_boundary") == EXPECTED_PUBLICATION_BOUNDARY
+        and manifest.get("score_claim") is False
+        and manifest.get("official_author_endorsement") is False,
+        "manifest publication boundary mismatch",
+    )
+    require(
+        manifest.get("attribution", {}).get("email") == EXPECTED_IDENTITY[1],
+        "manifest attribution mismatch",
+    )
     for relative, expected in manifest.get("aggregates", {}).items():
         path = ROOT / relative
         require(path.is_file(), f"missing aggregate input: {relative}")
@@ -181,6 +202,55 @@ def main() -> int:
             actual_claims.get(claim_id, {}).get("status") == status,
             f"claims.json status mismatch for Claim {claim_id}",
         )
+    reproduction = load_json("reproduction_verdicts.json")
+    state = load_json("AUTONOMOUS_STATE.json")
+    require(
+        claims.get("repository") == EXPECTED_REPOSITORY
+        and claims.get("overall_verdict") == EXPECTED_OVERALL_VERDICT
+        and claims.get("publication_allowed") is False
+        and claims.get("publication_boundary") == EXPECTED_PUBLICATION_BOUNDARY
+        and claims.get("score_claim") is False
+        and claims.get("official_author_endorsement") is False,
+        "claims publication boundary mismatch",
+    )
+    require(
+        reproduction.get("repository") == EXPECTED_REPOSITORY
+        and reproduction.get("overall_verdict") == EXPECTED_OVERALL_VERDICT
+        and reproduction.get("publication_allowed") is False
+        and reproduction.get("publication_boundary") == EXPECTED_PUBLICATION_BOUNDARY
+        and reproduction.get("score_claim") is False
+        and reproduction.get("official_author_endorsement") is False
+        and {
+            str(row.get("id")).removeprefix("C"): row.get("status")
+            for row in reproduction.get("claims", [])
+        }
+        == {
+            "1": "TOY_FINITE_OPERATION_FIXTURES",
+            "2": "UNVERIFIED_NOT_STARTED",
+            "3": "UNVERIFIED_NOT_STARTED",
+            "4": "UNVERIFIED_NOT_STARTED",
+            "5": "UNVERIFIED_NOT_STARTED",
+            "6": "UNVERIFIED_NOT_STARTED",
+        },
+        "reproduction verdict boundary mismatch",
+    )
+    require(
+        state.get("github_repository") == "https://github.com/" + EXPECTED_REPOSITORY
+        and state.get("phase") == "published_scoped_partial_audit"
+        and state.get("publication_allowed") is False
+        and state.get("overall_verdict") == EXPECTED_OVERALL_VERDICT
+        and state.get("publication_boundary") == EXPECTED_PUBLICATION_BOUNDARY
+        and state.get("score_claim") is False
+        and state.get("official_author_endorsement") is False
+        and state.get("live_verification", {}).get("branch_count") == 1
+        and state.get("live_verification", {}).get("default_branch") == "main"
+        and state.get("verified_reachable_commits") == 7,
+        "state publication boundary mismatch",
+    )
+    require(
+        state.get("attribution", {}).get("email") == EXPECTED_IDENTITY[1],
+        "state attribution mismatch",
+    )
 
     source_manifest = (ROOT / "evidence/source/SHA256SUMS").read_text().splitlines()
     for line in source_manifest:
@@ -248,6 +318,31 @@ def main() -> int:
         )
     except Exception as exc:
         ERRORS.append(f"Claim 1 recomputation failed: {exc}")
+
+    document_markers = {
+        "README.md": (
+            "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED",
+            "reproduction_verdicts.json",
+            "AUTONOMOUS_STATE.json",
+            "publication_allowed=false",
+            "score_claim=false",
+            "official_author_endorsement=false",
+        ),
+        "STATUS.md": (
+            "published_scoped_partial_audit",
+            "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED",
+            "reproduction_verdicts.json",
+        ),
+        "REPORT.md": (
+            "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED",
+            "publication_allowed=false",
+            "official_author_endorsement=false",
+        ),
+    }
+    for relative, markers in document_markers.items():
+        document = (ROOT / relative).read_text()
+        for marker in markers:
+            require(marker in document, f"{relative} missing marker: {marker}")
 
     if ERRORS:
         print("FINAL_AUDIT=FAILED")

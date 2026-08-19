@@ -12,6 +12,11 @@ the DBLP/GNN or large-scale experiments required by Claims 2–6. The status is
 deliberately conservative so that a passing toy is not mistaken for a full paper
 reproduction.
 
+Machine-readable overall verdict: PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED.
+Publication boundary: publication_allowed=false for a complete reproduction or
+score; this repository publishes a scoped toy-level dossier only. score_claim=false
+and official_author_endorsement=false.
+
 ## Current status
 
 | Claim | Paper target | Repository evidence | Verdict |
@@ -49,6 +54,10 @@ The repository-level audit record is split into small, reviewable documents:
 - [BRANCH_AUDIT.md](BRANCH_AUDIT.md) records the main-only branch topology,
   attribution contract, and final verifier.
 - [claims.json](claims.json) is the machine-readable status ledger.
+- [reproduction_verdicts.json](reproduction_verdicts.json) records the six
+  machine-readable claim verdicts, production paths, and boundaries.
+- [AUTONOMOUS_STATE.json](AUTONOMOUS_STATE.json) records the resumable audit
+  state and canonical attribution checkpoint.
 - [CITATION.cff](CITATION.cff) and [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md)
   provide citation metadata and the thank-you note to the paper authors.
 - [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) hashes the dossier and
@@ -129,5 +138,5 @@ come from.
 Approved repository commits are attributed to:
 
 ```text
-MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>
+MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>
 ```

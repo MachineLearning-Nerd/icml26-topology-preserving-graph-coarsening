@@ -11,7 +11,7 @@
     "Hongchao Qin",
     "Guoren Wang"
   ],
-  "phase": "dossier_published_claim_1_toy_only",
+  "phase": "published_scoped_partial_audit",
   "next_action": "continue_claim_2_source_faithful_protocol",
   "claim_status": {
     "1": "toy_finite_operation_fixtures",
@@ -41,11 +41,16 @@
   "failed_attempts": [],
   "dossier_publication_allowed": true,
   "full_scientific_release_allowed": false,
+  "publication_allowed": false,
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED",
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "old_repository": "icml26-repro-WtINGEMjTB-topology-preserving-graph-coarsening",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening",
   "pre_dossier_main": "a60b5167e8da65d0b0b2063a99e22195ee3cbf7c",
-  "dossier_commit": "200c6360140cba52539ed889649a4a3508f85f11",
+  "dossier_commit": "4d33f27f4991fb84968b3ac1ff1199495e536955",
   "dossier_commit_message": "docs(audit): publish topology coarsening dossier",
   "recovery_bundle_sha256": "2b64d66fa11acad930dc4edae96927e324c8146f8d6085621b2ce8b3a776267c",
   "evidence": {
@@ -59,7 +64,7 @@
     "default_branch": "main",
     "branch_count": 1,
     "old_orx_branches_present": false,
-    "reachable_commit_identity": "MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>",
+    "reachable_commit_identity": "MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>",
     "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=6 claim1=toy claims2-6=unverified",
     "fresh_clone_path": "/tmp/icml-topology-final-verify.8CpYyq",
     "github_description": "ICML 2026 scoped reproduction audit for Scalable Topology-Preserving Graph Coarsening",
@@ -79,8 +84,25 @@
     "final_verifier": "complete",
     "repository_rename": "complete"
   },
+  "verified_reachable_commits": 7,
+  "dossier_files": [
+    "README.md",
+    "STATUS.md",
+    "REPORT.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "BRANCH_AUDIT.md",
+    "ENVIRONMENT.md",
+    "AUTHOR_THANK_YOU.md",
+    "CITATION.cff",
+    "claims.json",
+    "reproduction_verdicts.json",
+    "EVIDENCE_MANIFEST.json",
+    "verify_final.py",
+    "AUTONOMOUS_STATE.json"
+  ],
   "attribution": {
     "name": "MachineLearning-Nerd",
-    "email": "37579156+MachineLearning-Nerd@users.noreply.github.com"
+    "email": "MachineLearning-Nerd@users.noreply.github.com"
   }
 }

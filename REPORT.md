@@ -11,6 +11,10 @@ three preserve clique-complex beta0 and beta1. A destructive non-dominance
 control changes beta0, demonstrating that the check can reject an invalid
 operation.
 
+Machine-readable overall verdict: PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED.
+The publication boundary is publication_allowed=false for a complete
+reproduction or score; score_claim=false and official_author_endorsement=false.
+
 ## Claim status
 
 | Claim | Status | Evidence |

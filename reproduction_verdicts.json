@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-topology-preserving-graph-coarsening",
+  "paper": {
+    "title": "Scalable Topology-Preserving Graph Coarsening: Concepts and Algorithms",
+    "authors": [
+      "Xiang Wu",
+      "Rong-Hua Li",
+      "Xunkai Li",
+      "Kangfei Zhao",
+      "Hongchao Qin",
+      "Guoren Wang"
+    ],
+    "arxiv": "2601.22943v2",
+    "openreview_id": "WtINGEMjTB"
+  },
+  "overall_verdict": "PARTIAL_CLAIM_1_TOY_CLAIMS_2_TO_6_UNVERIFIED",
+  "publication_allowed": false,
+  "publication_boundary": "PARTIAL_TOY_ONLY_NO_FULL_REPRODUCTION",
+  "score_claim": false,
+  "official_author_endorsement": false,
+  "claims": [
+    {
+      "id": "C1",
+      "status": "TOY_FINITE_OPERATION_FIXTURES",
+      "status_detail": "FINITE_SOURCE_FAITHFUL_OPERATION_FIXTURES_ONLY",
+      "production_path": [
+        "src/claim1_discrete_operations.py::run",
+        "tests/test_claim1_discrete_operations.py",
+        "outputs/claim1_discrete_operations/result.json"
+      ],
+      "claim_boundary": "Three deterministic tiny graph fixtures preserve clique-complex Betti_0 and Betti_1, while the non-dominance control changes Betti_0; this is not a general homotopy proof or paper-scale benchmark.",
+      "evidence": [
+        "outputs/claim1_discrete_operations/results.csv",
+        "outputs/claim1_discrete_operations/result.json",
+        "outputs/claim1_discrete_operations/run.log",
+        "outputs/claim1_discrete_operations/SHA256SUMS",
+        "evidence/claim1_attempt1/source_locations.md"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "UNVERIFIED_NOT_STARTED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "Lemma 2.5 homotopy-equivalence preservation still needs a general proof or larger source-faithful audit.",
+      "evidence": []
+    },
+    {
+      "id": "C3",
+      "status": "UNVERIFIED_NOT_STARTED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "Shortest-path and receptive-field bounds still need an independent audit.",
+      "evidence": []
+    },
+    {
+      "id": "C4",
+      "status": "UNVERIFIED_NOT_STARTED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "DBLP runtime and node-classification results at c=0.1 remain unverified.",
+      "evidence": []
+    },
+    {
+      "id": "C5",
+      "status": "UNVERIFIED_NOT_STARTED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "The reported cit-Patent acceleration and multi-dataset scalability remain unverified.",
+      "evidence": []
+    },
+    {
+      "id": "C6",
+      "status": "UNVERIFIED_NOT_STARTED",
+      "status_detail": "NO_INDEPENDENT_AUDIT_COMMITTED",
+      "production_path": null,
+      "claim_boundary": "The full ExactCoarsening Betti_1 trajectory remains unverified.",
+      "evidence": []
+    }
+  ]
+}
